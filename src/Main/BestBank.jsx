@@ -4,7 +4,7 @@ const BestBank = () => {
     return (
         <div>
             <div className='text-3xl m-5 font-bold text-center'><h1>Best In Bank</h1></div>
-            <div className='m-5 grid grid-cols-1 lg:grid-cols-3 gap-5'>
+            <div className='container mx-auto px-4 grid grid-cols-1 lg:grid-cols-3'>
                 <div className="card bg-base-100 w-96 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img width="100" height="100" src="https://img.icons8.com/avantgarde/100/bank.png" alt="bank" />
