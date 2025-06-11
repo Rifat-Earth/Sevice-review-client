@@ -19,7 +19,6 @@ const BestTravel = () => {
                         </div>
                     </div>
                 </div>
-
                 {/* Company 2 */}
                 <div className="card bg-base-100 w-80 shadow-sm">
                     <figure className="px-10 pt-10">

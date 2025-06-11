@@ -19,7 +19,7 @@ const BestBank = () => {
                             <input type="radio" name="rating-global" className="mask mask-star-2 bg-yellow-400" />
                             <input type="radio" name="rating-global" className="mask mask-star-2 bg-yellow-400" />
                             <input type="radio" name="rating-global" className="mask mask-star-2 bg-yellow-400" />
-                            <input type="radio" name="rating-global" className="mask mask-star-2 bg-yellow-400" checked />
+                            <input type="radio" name="rating-global" className="mask mask-star-2 bg-yellow-400" defaultChecked />
                             <input type="radio" name="rating-global" className="mask mask-star-2 bg-yellow-400" />
                         </div>
                         <div className="card-actions">
@@ -42,7 +42,7 @@ const BestBank = () => {
                             <input type="radio" name="rating-securepay" className="mask mask-star-2 bg-yellow-400" />
                             <input type="radio" name="rating-securepay" className="mask mask-star-2 bg-yellow-400" />
                             <input type="radio" name="rating-securepay" className="mask mask-star-2 bg-yellow-400" />
-                            <input type="radio" name="rating-securepay" className="mask mask-star-2 bg-yellow-400" checked />
+                            <input type="radio" name="rating-securepay" className="mask mask-star-2 bg-yellow-400" defaultChecked/>
                         </div>
                         <div className="card-actions">
                             <button className="btn btn-primary">Details</button>
@@ -64,7 +64,7 @@ const BestBank = () => {
                             <input type="radio" name="rating-metro" className="mask mask-star-2 bg-yellow-400" />
                             <input type="radio" name="rating-metro" className="mask mask-star-2 bg-yellow-400" />
                             <input type="radio" name="rating-metro" className="mask mask-star-2 bg-yellow-400" />
-                            <input type="radio" name="rating-metro" className="mask mask-star-2 bg-yellow-400" checked />
+                            <input type="radio" name="rating-metro" className="mask mask-star-2 bg-yellow-400" defaultChecked />
                             <input type="radio" name="rating-metro" className="mask mask-star-2 bg-yellow-400" />
                         </div>
                         <div className="card-actions">
