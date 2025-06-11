@@ -8,6 +8,9 @@ import SignIn from "../Pages/SignIn";
 import Contact from "../Pages/Contact";
 import Services from "../Pages/Services";
 import Register from "../Pages/Register";
+import AddService from "../Pages/AddService";
+import MyService from "../Pages/MyService";
+import MyReview from "../Pages/MyReview";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -19,11 +22,11 @@ export const router = createBrowserRouter([
             Component : Home
         },
         {
-            path: 'resister',
+            path: '/resister',
             Component: Register
         },
         {
-            path: 'SignIn',
+            path: '/SignIn',
             Component: SignIn
         },
         {
@@ -31,8 +34,20 @@ export const router = createBrowserRouter([
             Component: Contact
         },
         {
-            path: 'services',
+            path: '/services',
             Component: Services
+        },
+        {
+          path:'/addService',
+          Component: AddService
+        },
+        {
+          path: '/myService',
+          Component: MyService
+        },
+        {
+          path:'/MyReview',
+          Component: MyReview
         }
     ]
   },
