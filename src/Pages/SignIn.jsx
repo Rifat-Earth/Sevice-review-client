@@ -48,6 +48,7 @@ const SignIn = () => {
 
     const handleGoogleLogIn = () => {
       googleSignIn()
+       navigate('/')
         .then(result => {
                 console.log(result)
             })

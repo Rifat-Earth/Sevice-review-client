@@ -54,6 +54,7 @@ const Register = () => {
     }
     const handleGoogleLogIn = () => {
        googleSignIn()
+        navigate('/')
             .then(result => {
                 console.log(result)
             })

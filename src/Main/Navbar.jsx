@@ -1,8 +1,28 @@
-import React from 'react';
+import React, { use } from 'react';
 import { FaServicestack } from 'react-icons/fa';
 import { NavLink } from 'react-router';
+import { AuthContext } from '../contexts/AuthContext';
+import Swal from 'sweetalert2';
 
 const Navbar = () => {
+     const {  user,logOutUser } = use(AuthContext)
+
+         const handleLogOut = () => {
+        logOutUser()
+            .then(() => {
+                Swal.fire({
+                    title: "logged Out",
+                    icon: "success",
+                    draggable: true
+                });
+                console.log('sign out')
+                    .catch(error => {
+                        console.log(error)
+                    })
+            })
+    }
+
+
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="navbar-start">
@@ -36,8 +56,13 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-5">
-                 <NavLink to='resister' className={({ isActive }) => isActive ? "text-green-400 font-bold btn" : ""}>Register</NavLink>
+                {
+                    user?  <NavLink onClick={handleLogOut} className={({ isActive }) => isActive ? "text-green-400 font-bold btn" : ""}>Log Out</NavLink>
+                   : <>
+                     <NavLink to='resister' className={({ isActive }) => isActive ? "text-green-400 font-bold btn" : ""}>Register</NavLink>
                <NavLink to='SignIn' className={({ isActive }) => isActive ? "text-green-400 font-bold btn" : ""}>SignIn</NavLink>
+                    </>
+                }
             </div>
         </div>
     );
