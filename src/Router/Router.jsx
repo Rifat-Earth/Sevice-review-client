@@ -4,10 +4,10 @@ import {
 import Root from "../Main/Root";
 import Home from "../Pages/Home";
 import Error from "../Pages/Error";
-import Resister from "../Pages/Resister";
 import SignIn from "../Pages/SignIn";
 import Contact from "../Pages/Contact";
 import Services from "../Pages/Services";
+import Register from "../Pages/Register";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
         },
         {
             path: 'resister',
-            Component: Resister
+            Component: Register
         },
         {
             path: 'SignIn',

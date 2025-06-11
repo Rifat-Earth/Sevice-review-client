@@ -1,46 +1,59 @@
-import React, { useState } from 'react';
+import React, { use, useRef, useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
+import { AuthContext } from '../contexts/AuthContext';
+import Swal from 'sweetalert2';
 
 const SignIn = () => {
    
-    // const {} = use(AuthContext)
+    const {signInUser,googleSignIn} = use(AuthContext)
     const [showPassword, setShowPassword] = useState(false)
-    //    const [errorMassage, setErrorMassage] = useState('')
+     const [success, setSuccess] = useState(false)
+       const [errorMassage, setErrorMassage] = useState('')
+        const emailRef = useRef()
+          const navigate = useNavigate()
+
     const handleSignIn = e => {
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
         console.log(email, password)
-        // setSuccess(false)
-        // logInUser(email, password)
-        //     .then(result => {
-        //         setSuccess(true)
-        //         navigate('/')
-        //         Swal.fire({
-        //             position: "center",
-        //             icon: "success",
-        //             title: "successfully log In",
-        //             showConfirmButton: false,
-        //             timer: 1500
-        //         });
-        //     console.log(result.user)
-        // })
-        // .catch(error => {
-        //     setErrorMassage(error.message)
-        //     console.log(error)
-        // })
-        // const passwordValid = /(?=.*[a-z])(?=.*[A-Z]).{6,}/;
-        // if (passwordValid.test(password) === false) {
-        //     setErrorMassage('password must be 6 characters, one uppercase and one lowercase')
-        //     return;
-        // }
+
+        setSuccess(false)
+        signInUser(email, password)
+            .then(result => {
+                setSuccess(true)
+                navigate('/')
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "successfully sign In",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            console.log(result.user)
+        })
+        .catch(error => {
+            setErrorMassage(error.message)
+            console.log(error)
+        })
+        const passwordValid = /(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+        if (passwordValid.test(password) === false) {
+            setErrorMassage('password must be 6 characters, one uppercase and one lowercase')
+            return;
+        }
     }
 
     const handleGoogleLogIn = () => {
-
+      googleSignIn()
+        .then(result => {
+                console.log(result)
+            })
+            .catch(error => {
+                console.log(error)
+            })
     }
 
     return (
@@ -52,7 +65,7 @@ const SignIn = () => {
                         <h1 className='font-bold text-2xl '>Sign In</h1>
                         <form onSubmit={handleSignIn}>
                             <label className="label">Email</label>
-                            <input type="email" name='email' className="input" placeholder="Email" />
+                            <input type="email" ref={emailRef} name='email' className="input" placeholder="Email" />
                             <div className='relative'>
                                 <label className="label">Password</label>
                                 <input type={showPassword ? 'text' : 'password'} name='password' className="input" placeholder="Password" />
@@ -67,14 +80,14 @@ const SignIn = () => {
                             <p> <button onClick={handleGoogleLogIn} className='text-blue-400 btn mt-3 w-full'><FcGoogle />Log In with Google</button></p>
                             <button className="btn btn-neutral mt-4">SignIn</button>
                         </form>
-                        {/* {
+                        {
                             success && <p className='text-green-400'> you are successfully Done!</p>
 
                         }
 
                         {
                             errorMassage && <p className='text-red-400'>{errorMassage}</p>
-                        } */}
+                        }
                     </div>
                 </div>
             </div>

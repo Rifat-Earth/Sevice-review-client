@@ -36,7 +36,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end gap-5">
-                 <NavLink to='resister' className={({ isActive }) => isActive ? "text-green-400 font-bold btn" : ""}>Resister</NavLink>
+                 <NavLink to='resister' className={({ isActive }) => isActive ? "text-green-400 font-bold btn" : ""}>Register</NavLink>
                <NavLink to='SignIn' className={({ isActive }) => isActive ? "text-green-400 font-bold btn" : ""}>SignIn</NavLink>
             </div>
         </div>
