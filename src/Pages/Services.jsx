@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 const Services = () => {
     useEffect(() => {
-                    document.title = "Service | Service-review";
+                    document.title = "Services | Service-review";
                   }, []);
     return (
         <div>
