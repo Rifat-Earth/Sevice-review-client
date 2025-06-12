@@ -1,4 +1,4 @@
-import React, { use, useRef, useState } from 'react';
+import React, { use, useEffect, useRef, useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import { Link, useNavigate } from 'react-router';
@@ -6,6 +6,9 @@ import { AuthContext } from '../contexts/AuthContext';
 import Swal from 'sweetalert2';
 
 const SignIn = () => {
+    useEffect(() => {
+                document.title = "SignIn | Service-review";
+              }, []);
    
     const {signInUser,googleSignIn} = use(AuthContext)
     const [showPassword, setShowPassword] = useState(false)

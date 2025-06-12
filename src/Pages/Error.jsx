@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Error = () => {
+    useEffect(() => {
+        document.title = "Error | Service-review";
+    }, []);
     return (
         <div className="flex items-center justify-center h-screen bg-base-200">
             <div className="text-center">

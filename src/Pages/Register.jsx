@@ -1,4 +1,4 @@
-import React, { use, useState } from 'react';
+import React, { use, useEffect, useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import { Link, useNavigate } from 'react-router';
@@ -6,6 +6,9 @@ import { AuthContext } from '../contexts/AuthContext';
 import { updateProfile } from 'firebase/auth';
 
 const Register = () => {
+    useEffect(() => {
+            document.title = "Register | Service-review";
+          }, []);
 
     const { createUser,googleSignIn } = use(AuthContext);
     const [showPassword, setShowPassword] = useState(false)

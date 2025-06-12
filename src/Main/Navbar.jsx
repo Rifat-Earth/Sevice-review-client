@@ -1,4 +1,4 @@
-import React, { use } from 'react';
+import React, { use, useEffect } from 'react';
 import { FaServicestack } from 'react-icons/fa';
 import { NavLink } from 'react-router';
 import { AuthContext } from '../contexts/AuthContext';
@@ -6,6 +6,9 @@ import Swal from 'sweetalert2';
 
 const Navbar = () => {
     const { user, logOutUser } = use(AuthContext)
+    useEffect(() => {
+            document.title = "Navbar | Service-review";
+          }, []);
 
     const handleLogOut = () => {
         logOutUser()
@@ -80,8 +83,8 @@ const Navbar = () => {
                     user ?
                         <>
                             <div className="group relative flex items-center gap-2 cursor-pointer">
-                                <img src={user.photoURL} alt="Profile" className="w-8 h-8 rounded-full object-cover" />
-                                <span className="hidden group-hover:inline bg-gray-200 text-lg px-2 py-1  rounded shadow absolute top-full mt-1">
+                                <img src={user.photoURL} alt="Profile" className="w-7 h-7 rounded-full object-cover" />
+                                <span className="hidden group-hover:inline bg-gray-200 text-sm px-2   rounded shadow absolute top-full mt-1">
                                     {user.displayName || "My Profile"}
                                 </span>
                             </div>

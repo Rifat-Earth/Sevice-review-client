@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Banner from '../Main/Banner';
 import Featured_Service_section from '../Main/Featured_Service_section';
 import PartnerSection from '../Main/PartnerSection';
@@ -6,6 +6,9 @@ import BestBank from '../Main/BestBank';
 import BestTravel from '../Main/BestTravel';
 
 const Home = () => {
+   useEffect(() => {
+                      document.title = "Home | Service-review";
+                    }, []);
     return (
         <div>
           <Banner></Banner>
