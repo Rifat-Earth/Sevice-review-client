@@ -22,6 +22,7 @@ const AddService = () => {
         const formData = new FormData(form);
         const newService = Object.fromEntries(formData.entries())
         console.log(newService)
+         newService.date = new Date().toISOString();
 
         fetch('http://localhost:3000/services',{
             method: 'POST',
@@ -53,19 +54,7 @@ const AddService = () => {
                 <h1 className='text-2xl bold mb-6 font-bold'>Add New Service</h1>
             </div>
             <form onSubmit={handleAddService}>
-                 <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4 mb-5 ">
-                        <label className="label">Category</label>
-                        <label className="select w-full">
-
-                            <select name="category" className="select w-full">
-                                <option>Bank</option>
-                                <option>Car Service</option>
-                                <option>Food Service</option>
-                                <option>Travel Service</option>
-                            </select>
-                        </label>
-
-                    </fieldset>
+                 
 
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-2'>
                     <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4">
@@ -77,7 +66,7 @@ const AddService = () => {
                     <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4 ">
 
                         <label className="label">Service Image</label>
-                        <input type="photo" name='photo' className="input  w-full" placeholder="photo" />
+                        <input type="text" name='photo' className="input  w-full" placeholder="photo" />
 
                     </fieldset>
                     <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4 ">
@@ -90,7 +79,7 @@ const AddService = () => {
                     <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4 ">
 
                         <label className="label">Website</label>
-                        <input type="text" name='website' className="input  w-full" placeholder="company name" />
+                        <input type="text" name='website' className="input  w-full" placeholder="Website URL" />
 
                     </fieldset>
 
@@ -101,24 +90,31 @@ const AddService = () => {
 
                     </fieldset>
                    
+                      <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4 mb-5 ">
+                        <label className="label">Category</label>
+                        <label className="select w-full">
 
+                            <select name="category" className="select w-full">
+                                <option>Bank</option>
+                                <option>Car Service</option>
+                                <option>Food Service</option>
+                                <option>Travel Service</option>
+                            </select>
+                        </label>
+
+                    </fieldset>
                     <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4 ">
 
                         <label className="label">Price</label>
                         <input type="text" name='price' className="input  w-full" placeholder="price" />
 
                     </fieldset>
-                    <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4 ">
-
-                        <label className="label">Added Date</label>
-                        <input type="date" name="date" className="input w-full" />
-
-                    </fieldset>
+                   
                     <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4  ">
 
                         <label className="label ">User Email</label>
                        
-                        <input type="text" name='email' className="input  w-full" placeholder= {user?.email}   />
+                        <input type="text" name='email' className="input  w-full" defaultValue={user?.email} readOnly  />
                     
                     </fieldset>
                     

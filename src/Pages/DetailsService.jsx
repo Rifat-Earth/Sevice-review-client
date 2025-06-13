@@ -18,9 +18,9 @@ const DetailsService = () => {
              <p><strong>Title:</strong> {title}</p>
             <p><strong>Description:</strong> {description}</p>
             <p><strong>Deadline:</strong> {date}</p>
-            <p><strong>Budget:</strong> {price}</p>
+            <p><strong>Price:</strong> {price}</p>
              <p><strong>Website:</strong> {website}</p>
-            <p><strong>Contact Email:</strong> {email}</p>
+            <p><strong>Email:</strong> {email}</p>
         </div>
         
         </div>
