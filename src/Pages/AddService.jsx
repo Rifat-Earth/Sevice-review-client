@@ -1,10 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Swal from 'sweetalert2';
+import { AuthContext } from '../contexts/AuthContext';
 
 const AddService = () => {
     useEffect(() => {
         document.title = "AddService | Service-review";
     }, []);
+
+   const { user, loading } = useContext(AuthContext)
+
+    if (loading) {
+        return <div className="flex justify-center items-center min-h-screen">
+            <span className="loading loading-dots text-info"></span>
+        </div>
+    }
+
 
     const handleAddService = e => {
         e.preventDefault();
@@ -107,8 +117,9 @@ const AddService = () => {
                     <fieldset className="fieldset bg-base-200 border-base-300 rounded-box  border p-4  ">
 
                         <label className="label ">User Email</label>
-                        <input type="text" name='email' className="input  w-full" placeholder="email" />
-
+                       
+                        <input type="text" name='email' className="input  w-full" placeholder= {user?.email}   />
+                    
                     </fieldset>
                     
 

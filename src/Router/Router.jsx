@@ -11,6 +11,7 @@ import Register from "../Pages/Register";
 import AddService from "../Pages/AddService";
 import MyService from "../Pages/MyService";
 import MyReview from "../Pages/MyReview";
+import DetailsService from "../Pages/DetailsService";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -35,7 +36,13 @@ export const router = createBrowserRouter([
         },
         {
             path: '/services',
+            loader: ()=> fetch('http://localhost:3000/services'),
             Component: Services
+        },
+        {
+          path: '/detailsService/:id',
+          loader: ()=> fetch('http://localhost:3000/services'),
+          Component: DetailsService
         },
         {
           path:'/addService',
@@ -43,6 +50,7 @@ export const router = createBrowserRouter([
         },
         {
           path: '/myService',
+          loader: ()=> fetch('http://localhost:3000/services'),
           Component: MyService
         },
         {

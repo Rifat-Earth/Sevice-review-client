@@ -63,13 +63,13 @@ const Navbar = () => {
                         user ?
                             <>
                                 <li ><NavLink to='/' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ''}>Home</NavLink></li>
-                                <li ><NavLink to='/services' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Services</NavLink></li>
-                                <li ><NavLink to='/AddService' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ''}>AddService</NavLink></li>
-                                <li ><NavLink to='/MyService' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>MyService</NavLink></li>
-                                <li ><NavLink to='/MyReview' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>MyReview</NavLink></li>
+                                <li ><NavLink to='/services' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>All Services</NavLink></li>
+                                <li ><NavLink to='/AddService' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ''}>AddServices</NavLink></li>
+                                <li ><NavLink to='/MyService' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>MyServices</NavLink></li>
+                                <li ><NavLink to='/MyReview' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>MyReviews</NavLink></li>
                             </> :
                             <> <li ><NavLink to='/' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ''}>Home</NavLink></li>
-                                <li ><NavLink to='/services' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Services</NavLink></li>
+                                <li ><NavLink to='/services' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>All Services</NavLink></li>
                                 <li ><NavLink to='/contact' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Contact-Us</NavLink></li>
 
                             </>
