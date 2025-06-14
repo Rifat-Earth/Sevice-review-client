@@ -12,6 +12,8 @@ import AddService from "../Pages/AddService";
 import MyService from "../Pages/MyService";
 import MyReview from "../Pages/MyReview";
 import DetailsService from "../Pages/DetailsService";
+import PrivateRoute from "./PrivateRoute";
+import { MdMyLocation } from "react-icons/md";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -46,16 +48,16 @@ export const router = createBrowserRouter([
         },
         {
           path:'/addService',
-          Component: AddService
+          element: <PrivateRoute><AddService></AddService> </PrivateRoute>
         },
         {
           path: '/myService',
           loader: ()=> fetch('http://localhost:3000/services'),
-          Component: MyService
+          element: <PrivateRoute><MyService></MyService> </PrivateRoute> 
         },
         {
           path:'/MyReview',
-          Component: MyReview
+          element: <PrivateRoute>< MyReview></MyReview></PrivateRoute>
         }
     ]
   },

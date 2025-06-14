@@ -22,9 +22,9 @@ const AddService = () => {
         const formData = new FormData(form);
         const newService = Object.fromEntries(formData.entries())
         console.log(newService)
-         newService.date = new Date().toISOString();
+        newService.date = new Date().toISOString();
 
-        fetch('http://localhost:3000/services',{
+         fetch('http://localhost:3000/services',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

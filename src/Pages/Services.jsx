@@ -8,7 +8,7 @@ const Services = () => {
                     document.title = "Services | Service-review";
                   }, []);
 
-     const services = useLoaderData();
+    const services = useLoaderData();
     const {loading} =useContext(AuthContext)
     if (loading) {
         return <div className="flex justify-center items-center min-h-screen">
@@ -18,7 +18,7 @@ const Services = () => {
 
     return (
         <div>
-            <div className='grid grid-cols-1 md:grid-cols-3 ml-32 mt-4'>
+            <div className='grid grid-cols-1 md:grid-cols-3 p-12 gap-5 mt-4 '>
                 {
                     services.map(service=> <SingleService key={service._id} service ={service}></SingleService> )
                 }

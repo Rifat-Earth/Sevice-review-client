@@ -9,18 +9,18 @@ const MyService = () => {
     }, []);
     const data = useLoaderData()
     const { user, loading } = useContext(AuthContext)
-    const [tasks, setTasks] = useState([]);
-
+    const [services, setServices] = useState([]);
+    const [editService, setEditService] = useState(null);
 
     const userEmail = user?.email;
     useEffect(() => {
-        setTasks(data);
+        setServices(data);
     }, [data]);
     // console.log(data)
-    const myServiceData = tasks.filter(
+    const myServiceData = services.filter(
         service => service.email.toLowerCase() === userEmail?.toLowerCase()
     );
-    //    console.log(myPostedData)
+
     if (loading) {
         return <div className="flex justify-center items-center min-h-screen">
             <span className="loading loading-dots text-info"></span>
@@ -41,18 +41,20 @@ const MyService = () => {
             console.log(result.isConfirmed)
             if (result.isConfirmed) {
 
-                fetch(`https://freelancer-task-server.vercel.app/tasks/${_id}`, {
+                fetch(`http://localhost:3000/services/${_id}`, {
                     method: 'DELETE',
-
+                    headers: {
+                        'user-email': user.email
+                    }
                 })
                     .then(res => res.json())
                     .then(data => {
                         if (data.deletedCount) {
-                            setTasks(prevServices => prevServices.filter(service => service._id !== _id));
+                            setServices(prevServices => prevServices.filter(service => service._id !== _id));
 
                             Swal.fire({
                                 title: "Deleted!",
-                                text: "Your task has been deleted.",
+                                text: "Your services has been deleted.",
                                 icon: "success"
                             });
                         }
@@ -60,6 +62,33 @@ const MyService = () => {
             }
         });
     };
+    const handleUpdate = e => {
+        e.preventDefault();
+        const form = e.target;
+        const updatedService = {
+            name: form.name.value,
+            category: form.category.value,
+            price: form.price.value
+        };
+        fetch(`http://localhost:3000/services/${editService._id}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(updatedService)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.modifiedCount > 0) {
+                    const updated = services.map(service =>
+                        service._id === editService._id ? { ...service, ...updatedService } : service
+                    );
+                    setServices(updated);
+                    setEditService(null);
+                    Swal.fire("Updated!", "Service updated successfully.", "success");
+                }
+            });
+    };
+
+
     return (
         <div>
             <div className="container mx-auto px-4 py-8">
@@ -76,7 +105,7 @@ const MyService = () => {
                                 <tr>
                                     <th>Name</th>
                                     <th>Category</th>
-                                    <th>Date</th>
+                                    <th>Title</th>
                                     <th>Price</th>
                                     <th>Actions</th>
                                 </tr>
@@ -86,7 +115,7 @@ const MyService = () => {
                                     <tr key={service._id}>
                                         <td>{service.name}</td>
                                         <td>{service.category}</td>
-                                        <td>{service.date}</td>
+                                        <td>{service.title}</td>
                                         <td>{service.price}</td>
 
                                         <td className="space-x-2">
@@ -97,13 +126,17 @@ const MyService = () => {
                                             >
                                                 Delete
                                             </button>
-                                            <Link to={`/updated/${service._id}`}>
-                                                <button
-                                                    className="btn btn-sm btn-warning"
-                                                >
-                                                    Update
-                                                </button>
-                                            </Link>
+
+                                            <button
+                                                className="btn btn-sm btn-warning"
+                                                onClick={() => {
+                                                    setEditService(service);
+                                                    document.getElementById('update_modal').showModal();
+                                                }}
+                                            >
+                                                Update
+                                            </button>
+
 
                                         </td>
                                     </tr>
@@ -112,8 +145,25 @@ const MyService = () => {
                         </table>
                     </div>
                 )}
+                <dialog id="update_modal" className="modal">
+                    <div className="modal-box">
+                        <h3 className="font-bold text-lg">Update Service</h3>
+                        <form onSubmit={handleUpdate} className="space-y-3 mt-4">
+                            <input type="text" name="name" defaultValue={editService?.name} placeholder="Name" className="input input-bordered w-full" />
+                            <input type="text" name="category" defaultValue={editService?.category} placeholder="Category" className="input input-bordered w-full" />
+                            <input type="text" name="title" defaultValue={editService?.title} placeholder="title" className="input input-bordered w-full" />
+                            <input type="number" name="price" defaultValue={editService?.price} placeholder="Price" className="input input-bordered w-full" />
+
+                            <div className="modal-action">
+                                <button type="button" className="btn" onClick={() => document.getElementById('update_modal').close()}>Cancel</button>
+                                <button type="submit" className="btn btn-primary">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </dialog>
             </div>
         </div>
+
     );
 };
 
