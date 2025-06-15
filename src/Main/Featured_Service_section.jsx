@@ -1,11 +1,30 @@
 import React from 'react';
+import { Link } from 'react-router';
 // import { motion} from "motion/react"
 
-const Featured_Service_section = () => {
+const Featured_Service_section = ({ feature }) => {
+    console.log(feature)
     return (
-        <div>
-           <div className='text-center font-bold text-3xl mt-5 mb-5'> <h1 initial={{ scale: 0 }} animate={{ scale: 1 }}>Featured Service Section</h1></div>
-        </div>
+        <>
+            <div className="card card-side bg-base-100 shadow-sm h-72 m-4 p-4">
+                <figure>
+                    <img
+                        src={feature.photo}
+                        alt="photo" />
+                </figure>
+                <div className="card-body">
+                    <h2 className="card-title">{feature.title}</h2>
+                    <p><span className='text-lg '>Description:</span> {feature.description}</p>
+                   
+                     <div className="card-actions">
+                                            <h2 className="card-title text-center"><span className='font-semibold text-red-600 '>Price:</span>  {feature.price}</h2>
+                                            <Link to={`/detailsService/${feature._id}`}>
+                                                <button className="btn   w-full">View Details</button>
+                                            </Link>
+                                        </div>
+                </div>
+            </div>
+        </>
     );
 };
 

@@ -4,7 +4,7 @@ const BestTravel = () => {
     return (
         <div>
             <div className='text-3xl font-bold text-center m-5'><h1>Best In Travel Insurance Company</h1></div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 container mx-auto px-2 mb-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 m-4 ml-4 px-2 mb-5">
 
                 {/* Company 1 */}
                 <div className="card bg-base-100 w-80 shadow-sm">

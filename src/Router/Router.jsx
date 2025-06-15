@@ -22,6 +22,7 @@ export const router = createBrowserRouter([
     children: [
         {
             index: true,
+            loader: async () => fetch("http://localhost:3000/services"),
             Component : Home
         },
         {
