@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../contexts/AuthContext';
-import { Link, useLoaderData } from 'react-router';
+import { useLoaderData } from 'react-router';
 
 const MyService = () => {
     useEffect(() => {
@@ -11,7 +11,9 @@ const MyService = () => {
     const { user, loading } = useContext(AuthContext)
     const [services, setServices] = useState([]);
     const [editService, setEditService] = useState(null);
+    console.log(user.accessToken)
 
+    
     const userEmail = user?.email;
     useEffect(() => {
         setServices(data);

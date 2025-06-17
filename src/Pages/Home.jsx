@@ -6,6 +6,7 @@ import BestBank from '../Main/BestBank';
 import BestTravel from '../Main/BestTravel';
 import { useLoaderData } from 'react-router';
 import { AuthContext } from '../contexts/AuthContext';
+// import { motion } from "motion/react"
 
 const Home = () => {
 
@@ -24,11 +25,13 @@ const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <h1 className='text-center font-bold mt-6 mb-6 text-2xl'>Featured Service Section</h1>
-      <div className='grid grid-cols-1 m-4 md:grid-cols-3  mx-auto md:gap-2 mb-12 gap-2 '>
+      <h1
+        className='text-center font-bold mt-6 mb-6 text-2xl'>Featured Service Section</h1>
+      <div className='grid grid-cols-1 m-4 md:grid-cols-3 mx-auto md:gap-2 mb-12 gap-2 '>
         {
-          data.map(feature => <Featured_Service_section key={data.email
-          } feature={feature}></Featured_Service_section>)
+          data.slice(0, 6).map(feature => (
+            <Featured_Service_section key={feature._id} feature={feature} />
+          ))
         }
       </div>
       <PartnerSection></PartnerSection>

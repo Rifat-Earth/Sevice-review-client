@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {  } from 'react';
 import { Link } from 'react-router';
-// import { motion} from "motion/react"
+
 
 const Featured_Service_section = ({ feature }) => {
     console.log(feature)
+ 
+    
     return (
         <>
             <div className="card card-side bg-base-100 shadow-sm h-72 m-4 p-4">
