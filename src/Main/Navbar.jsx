@@ -44,10 +44,21 @@ const Navbar = () => {
                                     <li ><NavLink to='/AddService' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ''}>AddService</NavLink></li>
                                     <li ><NavLink to='/MyService' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>MyService</NavLink></li>
                                     <li ><NavLink to='/MyReview' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>MyReview</NavLink></li>
+                                     <li ><NavLink to='/demos' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Demos</NavLink></li>
+                                      <li ><NavLink to='/features' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Features</NavLink></li>
+                                       <li ><NavLink to='/support' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Support</NavLink></li>
+                                        <li ><NavLink to='/documentation' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Documentation</NavLink></li>
                                 </> :
                                 <> <li ><NavLink to='/' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ''}>Home</NavLink></li>
-                                    <li ><NavLink to='/services' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Services</NavLink></li>
-                                    <li ><NavLink to='/contact' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Contact-Us</NavLink></li>
+                                    <li ><NavLink to='/services' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>All Services</NavLink></li>
+                                    
+
+                                     <li ><NavLink to='/demos' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Demos</NavLink></li>
+                                      <li ><NavLink to='/features' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Features</NavLink></li>
+                                       <li ><NavLink to='/support' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Support</NavLink></li>
+                                        <li ><NavLink to='/documentation' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Documentation</NavLink></li>
+                                       <li ><NavLink to='/contact' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Contact-Us</NavLink></li>
+                                      
 
                                 </>
 
@@ -55,7 +66,7 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <a className="btn btn-ghost text-xl"> <FaServicestack /><span className='text-red-400'>Serve</span></a>
+                <a className="btn btn-ghost text-xl ml-4"> <FaServicestack /><span className='text-red-400'>Serve</span></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -67,10 +78,19 @@ const Navbar = () => {
                                 <li ><NavLink to='/AddService' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ''}>AddServices</NavLink></li>
                                 <li ><NavLink to='/MyService' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>MyServices</NavLink></li>
                                 <li ><NavLink to='/MyReview' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>MyReviews</NavLink></li>
+                                 <li ><NavLink to='/demos' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Demos</NavLink></li>
+                                      <li ><NavLink to='/features' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Features</NavLink></li>
+                                       <li ><NavLink to='/support' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Support</NavLink></li>
+                                        <li ><NavLink to='/documentation' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Documentation</NavLink></li>
                             </> :
                             <> <li ><NavLink to='/' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ''}>Home</NavLink></li>
                                 <li ><NavLink to='/services' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>All Services</NavLink></li>
-                                <li ><NavLink to='/contact' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Contact-Us</NavLink></li>
+                               
+                                 <li ><NavLink to='/demos' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Demos</NavLink></li>
+                                      <li ><NavLink to='/features' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Features</NavLink></li>
+                                       <li ><NavLink to='/support' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Support</NavLink></li>
+                                        <li ><NavLink to='/documentation' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Documentation</NavLink></li>
+                                        <li ><NavLink to='/contact' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Contact-Us</NavLink></li>
 
                             </>
 
@@ -90,8 +110,14 @@ const Navbar = () => {
                             </div>
                             <NavLink onClick={handleLogOut} className={({ isActive }) => isActive ? "text-green-400 font-bold btn" : ""}>Log Out</NavLink></>
                         : <>
-                            <NavLink to='/resister' className={({ isActive }) => isActive ? "text-green-400 font-bold btn" : ""}>Register</NavLink>
-                            <NavLink to='/SignIn' className={({ isActive }) => isActive ? "text-green-400 font-bold btn" : ""}>SignIn</NavLink>
+                           <div className=' mr-8 flex'>
+                             <div className='mr-5'>
+                                <NavLink to='/resister' className={({ isActive }) => isActive ? "text-green-400  font-bold btn" : ""}>Register</NavLink>
+                             </div>
+                           <div>
+                             <NavLink to='/SignIn' className={({ isActive }) => isActive ? "text-green-400 font-bold btn " : ""}>SignIn</NavLink>
+                           </div>
+                           </div>
                         </>
                 }
             </div>

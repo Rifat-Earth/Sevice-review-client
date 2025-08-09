@@ -14,6 +14,10 @@ import MyReview from "../Pages/MyReview";
 import DetailsService from "../Pages/DetailsService";
 import PrivateRoute from "./PrivateRoute";
 import { MdMyLocation } from "react-icons/md";
+import Documentation from "../Pages/Documentation";
+import Support from "../Pages/Support";
+import Demos from "../Pages/Demos";
+import Features from "../Pages/Features";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -36,6 +40,22 @@ export const router = createBrowserRouter([
         {
             path: '/contact',
             Component: Contact
+        },
+        {
+           path:'/documentation',
+           Component: Documentation
+        },
+         {
+           path:'/features',
+           Component:Features
+        },
+         {
+           path:'/demos',
+           Component: Demos
+        },
+         {
+           path:'/support',
+           Component: Support
         },
         {
             path: '/services',
