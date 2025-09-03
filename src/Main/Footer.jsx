@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
             <nav className="grid grid-flow-col gap-4">
-               <ul className='flex gap-x-4'>
+               <ul className=' gap-x-4 md:flex lg:flex'>
                  <li ><NavLink to='/' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ''}>Home</NavLink></li>
                 <li ><NavLink to='/services' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Services</NavLink></li>
                 <li ><NavLink to='/demos' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Demos</NavLink></li>

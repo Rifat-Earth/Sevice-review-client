@@ -68,7 +68,7 @@ const Services = () => {
             </div>
 
 
-            <div className="grid grid-cols-1 md:grid-cols-3 p-2 md:p-12 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 p-5 md:p-12 gap-5">
                 {services.length > 0 ? (
                     services.map((service) => (
                         <SingleService key={service._id} service={service} />

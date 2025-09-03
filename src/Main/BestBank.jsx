@@ -4,8 +4,9 @@ const BestBank = () => {
     return (
         <div>
             <div className='text-3xl m-5 font-bold text-center'><h1>Best In Bank</h1></div>
-            <div className='m-4 ml-4  grid grid-cols-1 lg:grid-cols-3 gap-8'>
-                <div className="card bg-base-100 w-78 shadow-sm">
+            <div className='m-4 ml-20  grid grid-cols-1 lg:grid-cols-4 gap-8'>
+                {/* bank -1 */}
+                <div className="card bg-base-100 w-80 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img width="100" height="100" src="https://img.icons8.com/avantgarde/100/bank.png" alt="bank" />
                     </figure>
@@ -27,7 +28,124 @@ const BestBank = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card bg-base-100 w-78 shadow-sm">
+                  {/* bank -2 */}
+                <div className="card bg-base-100 w-80 shadow-sm">
+                    <figure className="px-10 pt-10">
+                        <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
+                    </figure>
+                    <div className="card-body items-center text-center">
+                        <h2 className="card-title">SecurePay Bank</h2>
+                        <p>Specialized in secure digital payments and fintech support.</p>
+                        <a href="https://www.securepaybank.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-sm">
+                            Visit Website
+                        </a>
+                        <div className="rating my-2">
+                            <input type="radio" name="rating-stat" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-star" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-star" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-star" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-star" className="mask mask-star-2 bg-yellow-400" defaultChecked/>
+                        </div>
+                        <div className="card-actions">
+                            <button className="btn btn-primary">Details</button>
+                        </div>
+                    </div>
+                </div>
+                {/* bank-4 */}
+                 <div className="card bg-base-100 w-80 shadow-sm">
+                    <figure className="px-10 pt-10">
+                        <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
+                    </figure>
+                    <div className="card-body items-center text-center">
+                        <h2 className="card-title">SecurePay Bank</h2>
+                        <p>Specialized in secure digital payments and fintech support.</p>
+                        <a href="https://www.securepaybank.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-sm">
+                            Visit Website
+                        </a>
+                        <div className="rating my-2">
+                            <input type="radio" name="rating-pay" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-pay" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-pay" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-pay" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-pay" className="mask mask-star-2 bg-yellow-400" defaultChecked/>
+                        </div>
+                        <div className="card-actions">
+                            <button className="btn btn-primary">Details</button>
+                        </div>
+                    </div>
+                </div>
+                {/* bank-7 */}
+                
+                 <div className="card bg-base-100 w-80 shadow-sm">
+                    <figure className="px-10 pt-10">
+                        <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
+                    </figure>
+                    <div className="card-body items-center text-center">
+                        <h2 className="card-title">SecurePay Bank</h2>
+                        <p>Specialized in secure digital payments and fintech support.</p>
+                        <a href="https://www.securepaybank.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-sm">
+                            Visit Website
+                        </a>
+                        <div className="rating my-2">
+                            <input type="radio" name="rating-seven" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-seven" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-seven" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-seven" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-seven" className="mask mask-star-2 bg-yellow-400" defaultChecked/>
+                        </div>
+                        <div className="card-actions">
+                            <button className="btn btn-primary">Details</button>
+                        </div>
+                    </div>
+                </div>
+                {/* bank-8 */}
+                 <div className="card bg-base-100 w-80 shadow-sm">
+                    <figure className="px-10 pt-10">
+                        <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
+                    </figure>
+                    <div className="card-body items-center text-center">
+                        <h2 className="card-title">SecurePay Bank</h2>
+                        <p>Specialized in secure digital payments and fintech support.</p>
+                        <a href="https://www.securepaybank.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-sm">
+                            Visit Website
+                        </a>
+                        <div className="rating my-2">
+                            <input type="radio" name="rating-eight" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-eight" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-eight" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-eight" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-eight" className="mask mask-star-2 bg-yellow-400" defaultChecked/>
+                        </div>
+                        <div className="card-actions">
+                            <button className="btn btn-primary">Details</button>
+                        </div>
+                    </div>
+                </div>
+                {/* bank-5 */}
+                 <div className="card bg-base-100 w-80 shadow-sm">
+                    <figure className="px-10 pt-10">
+                        <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
+                    </figure>
+                    <div className="card-body items-center text-center">
+                        <h2 className="card-title">SecurePay Bank</h2>
+                        <p>Specialized in secure digital payments and fintech support.</p>
+                        <a href="https://www.securepaybank.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-sm">
+                            Visit Website
+                        </a>
+                        <div className="rating my-2">
+                            <input type="radio" name="rating-secure" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-secure" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-secure" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-secure" className="mask mask-star-2 bg-yellow-400" />
+                            <input type="radio" name="rating-secure" className="mask mask-star-2 bg-yellow-400" defaultChecked/>
+                        </div>
+                        <div className="card-actions">
+                            <button className="btn btn-primary">Details</button>
+                        </div>
+                    </div>
+                </div>
+                {/* bank-6 */}
+                 <div className="card bg-base-100 w-80 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
                     </figure>
@@ -49,8 +167,8 @@ const BestBank = () => {
                         </div>
                     </div>
                 </div>
-
-                <div className="card bg-base-100 w-78 shadow-sm">
+               {/* bank -3 */}
+                <div className="card bg-base-100 w-80 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img width="50" height="50" src="https://img.icons8.com/doodle/50/bank.png" alt="bank"/>
                     </figure>
