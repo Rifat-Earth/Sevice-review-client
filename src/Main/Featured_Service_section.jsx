@@ -8,7 +8,7 @@ const Featured_Service_section = ({ feature }) => {
     
     return (
         <>
-            <div className="card card-side h-90 w-80 lg:w-50 md:w-60 bg-base-100 shadow-sm mb-5   ">
+            <div className="card card-side h-90 w-80 lg:w-50 md:w-60 bg-base-100 shadow-sm mb-5 hover:scale-105 transform transition duration-300  ">
                
                 <div className="card-body">
                      <figure>
@@ -22,7 +22,7 @@ const Featured_Service_section = ({ feature }) => {
                      <div className="card-actions">
                                            
                                             <Link to={`/detailsService/${feature._id}`}>
-                                                <button className="btn   w-full">View Details</button>
+                                                <button className="btn bg-green-400  w-full">View Details</button>
                                             </Link>
                                         </div>
                 </div>

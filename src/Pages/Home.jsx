@@ -6,6 +6,9 @@ import BestBank from '../Main/BestBank';
 import BestTravel from '../Main/BestTravel';
 import { useLoaderData } from 'react-router';
 import { AuthContext } from '../contexts/AuthContext';
+import PopularServices from '../Main/PopularServices';
+import WhyChooseUs from '../Main/WhyChooseUs';
+import CustomerReview from '../Main/CustomerReview';
 // import { motion } from "motion/react"
 
 const Home = () => {
@@ -30,13 +33,16 @@ const Home = () => {
       <div className='grid grid-cols-1 m-4 md:grid-cols-4 lg:grid-cols-6   md:gap-2 ml-20 gap-2 '>
         {
           data.slice(0, 12).map(feature => (
-            <Featured_Service_section key={feature._id} feature={feature} />
+            <Featured_Service_section className='card bg-base-200 shadow-lg hover:scale-105 transform transition duration-300' key={feature._id} feature={feature} />
           ))
         }
       </div>
       <PartnerSection></PartnerSection>
       <BestBank></BestBank>
       <BestTravel></BestTravel>
+      <PopularServices></PopularServices>
+      <WhyChooseUs></WhyChooseUs>
+      <CustomerReview></CustomerReview>
     </div>
   );
 };
