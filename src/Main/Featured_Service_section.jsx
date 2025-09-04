@@ -8,18 +8,19 @@ const Featured_Service_section = ({ feature }) => {
     
     return (
         <>
-            <div className="card card-side bg-base-100 shadow-sm h-72 m-4 p-4">
-                <figure>
+            <div className="card card-side h-90 w-80 lg:w-50 md:w-60 bg-base-100 shadow-sm mb-5   ">
+               
+                <div className="card-body">
+                     <figure>
                     <img
                         src={feature.photo}
-                        alt="photo" />
+                        alt="photo" className='w-36  rounded-xl  ' />
                 </figure>
-                <div className="card-body">
                     <h2 className="card-title">{feature.title}</h2>
-                    <p><span className='text-lg '>Description:</span> {feature.description}</p>
-                   
+                    <p><span className='text-lg font-bold'>Description:</span> {feature.description}</p>
+                    <h2 className="card-title text-center"><span className='font-semibold text-red-600 '>Price:</span>  {feature.price}</h2>
                      <div className="card-actions">
-                                            <h2 className="card-title text-center"><span className='font-semibold text-red-600 '>Price:</span>  {feature.price}</h2>
+                                           
                                             <Link to={`/detailsService/${feature._id}`}>
                                                 <button className="btn   w-full">View Details</button>
                                             </Link>

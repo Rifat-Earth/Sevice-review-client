@@ -26,10 +26,10 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <h1
-        className='text-center font-bold mt-6 mb-6 text-2xl'>Featured Service Section</h1>
-      <div className='grid grid-cols-1 m-4 md:grid-cols-3 mx-auto md:gap-2 mb-12 gap-2 '>
+        className='text-3xl font-bold text-center m-5 mt-10'>Featured Service Section</h1>
+      <div className='grid grid-cols-1 m-4 md:grid-cols-4 lg:grid-cols-6   md:gap-2 ml-20 gap-2 '>
         {
-          data.slice(0, 6).map(feature => (
+          data.slice(0, 12).map(feature => (
             <Featured_Service_section key={feature._id} feature={feature} />
           ))
         }

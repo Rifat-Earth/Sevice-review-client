@@ -3,10 +3,10 @@ import React from 'react';
 const BestBank = () => {
     return (
         <div>
-            <div className='text-3xl m-5 font-bold text-center'><h1>Best In Bank</h1></div>
-            <div className='m-4 ml-20  grid grid-cols-1 lg:grid-cols-4 gap-8'>
+            <div className='text-3xl font-bold text-center m-5'><h1>Best In Bank</h1></div>
+            <div className=' ml-20  grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 md:justify-evenly'>
                 {/* bank -1 */}
-                <div className="card bg-base-100 w-80 shadow-sm">
+                <div className="card bg-base-100 md:w-60  w-80 lg:w-50 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img width="100" height="100" src="https://img.icons8.com/avantgarde/100/bank.png" alt="bank" />
                     </figure>
@@ -29,7 +29,7 @@ const BestBank = () => {
                     </div>
                 </div>
                   {/* bank -2 */}
-                <div className="card bg-base-100 w-80 shadow-sm">
+                <div className="card bg-base-100 w-80 md:w-60 lg:w-50 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
                     </figure>
@@ -52,7 +52,7 @@ const BestBank = () => {
                     </div>
                 </div>
                 {/* bank-4 */}
-                 <div className="card bg-base-100 w-80 shadow-sm">
+                 <div className="card bg-base-100 w-80 md:w-60 lg:w-50 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
                     </figure>
@@ -74,55 +74,9 @@ const BestBank = () => {
                         </div>
                     </div>
                 </div>
-                {/* bank-7 */}
-                
-                 <div className="card bg-base-100 w-80 shadow-sm">
-                    <figure className="px-10 pt-10">
-                        <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
-                    </figure>
-                    <div className="card-body items-center text-center">
-                        <h2 className="card-title">SecurePay Bank</h2>
-                        <p>Specialized in secure digital payments and fintech support.</p>
-                        <a href="https://www.securepaybank.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-sm">
-                            Visit Website
-                        </a>
-                        <div className="rating my-2">
-                            <input type="radio" name="rating-seven" className="mask mask-star-2 bg-yellow-400" />
-                            <input type="radio" name="rating-seven" className="mask mask-star-2 bg-yellow-400" />
-                            <input type="radio" name="rating-seven" className="mask mask-star-2 bg-yellow-400" />
-                            <input type="radio" name="rating-seven" className="mask mask-star-2 bg-yellow-400" />
-                            <input type="radio" name="rating-seven" className="mask mask-star-2 bg-yellow-400" defaultChecked/>
-                        </div>
-                        <div className="card-actions">
-                            <button className="btn btn-primary">Details</button>
-                        </div>
-                    </div>
-                </div>
-                {/* bank-8 */}
-                 <div className="card bg-base-100 w-80 shadow-sm">
-                    <figure className="px-10 pt-10">
-                        <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
-                    </figure>
-                    <div className="card-body items-center text-center">
-                        <h2 className="card-title">SecurePay Bank</h2>
-                        <p>Specialized in secure digital payments and fintech support.</p>
-                        <a href="https://www.securepaybank.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline text-sm">
-                            Visit Website
-                        </a>
-                        <div className="rating my-2">
-                            <input type="radio" name="rating-eight" className="mask mask-star-2 bg-yellow-400" />
-                            <input type="radio" name="rating-eight" className="mask mask-star-2 bg-yellow-400" />
-                            <input type="radio" name="rating-eight" className="mask mask-star-2 bg-yellow-400" />
-                            <input type="radio" name="rating-eight" className="mask mask-star-2 bg-yellow-400" />
-                            <input type="radio" name="rating-eight" className="mask mask-star-2 bg-yellow-400" defaultChecked/>
-                        </div>
-                        <div className="card-actions">
-                            <button className="btn btn-primary">Details</button>
-                        </div>
-                    </div>
-                </div>
+              
                 {/* bank-5 */}
-                 <div className="card bg-base-100 w-80 shadow-sm">
+                 <div className="card bg-base-100 w-80 md:w-60 lg:w-50 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
                     </figure>
@@ -145,7 +99,7 @@ const BestBank = () => {
                     </div>
                 </div>
                 {/* bank-6 */}
-                 <div className="card bg-base-100 w-80 shadow-sm">
+                 <div className="card bg-base-100 md:w-60 w-80 lg:w-50 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
                     </figure>
@@ -168,7 +122,7 @@ const BestBank = () => {
                     </div>
                 </div>
                {/* bank -3 */}
-                <div className="card bg-base-100 w-80 shadow-sm">
+                <div className="card bg-base-100 md:w-60 w-80 lg:w-50 shadow-sm">
                     <figure className="px-10 pt-10">
                         <img width="50" height="50" src="https://img.icons8.com/doodle/50/bank.png" alt="bank"/>
                     </figure>

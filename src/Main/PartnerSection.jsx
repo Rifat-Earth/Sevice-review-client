@@ -32,25 +32,16 @@ const PartnerSection = () => {
             logo: "https://img.icons8.com/bubbles/100/shield.png",
             description: "Ensures secure data handling and encrypted communication.",
         },
-         {
-            name: "SecureLayer5",
-            logo: "https://img.icons8.com/bubbles/100/shield.png",
-            description: "Ensures secure data handling and encrypted communication.",
-        },
-         {
-            name: "SecureLayer4",
-            logo: "https://img.icons8.com/bubbles/100/shield.png",
-            description: "Ensures secure data handling and encrypted communication.",
-        },
+         
     ];
     return (
         <div>
             <section className=" bg-base-100">
-                <div className=" px-4 ml-20">
-                    <h2 className="text-3xl font-bold text-center mb-8">Meet Our Partners</h2>
-                    <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+                <div className=" ml-20">
+                    <h2 className="text-3xl font-bold text-center m-5">Meet Our Partners</h2>
+                    <div className="grid sm:grid-cols-1  md:grid-cols-4 lg:grid-cols-6">
                         {partners.map((partner, index) => (
-                            <div key={index} className="card bg-base-200 shadow-xl">
+                            <div key={index} className="card bg-base-200 shadow-xl w-80 lg:w-50 md:w-60  ">
                                 <figure className="px-10 pt-10">
                                     <img src={partner.logo} alt={partner.name} className="rounded-xl w-16 h-16 object-contain" />
                                 </figure>
