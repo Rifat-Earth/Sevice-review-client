@@ -9,11 +9,11 @@ const WhyChooseUs = () => {
     ];
     return (
         <div>
-            <div className=' h-80 ml-20 rounded-xl mr-8 '>
+            <div className='  ml-20 rounded-xl mr-8 mb-6 '>
                 <div className="py-5 bg-base-200">
                     <div className="max-w-6xl mx-auto text-center px-6">
                         {/* Heading */}
-                        <h2 className="text-4xl font-bold mb-6">
+                        <h2 className="text-3xl font-bold mb-6">
                             Why <span className="text-green-400">Choose Us?</span>
                         </h2>
                         <p className="text-gray-600 max-w-2xl mx-auto mb-12">

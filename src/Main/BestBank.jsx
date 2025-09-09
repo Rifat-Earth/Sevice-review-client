@@ -3,7 +3,7 @@ import React from 'react';
 const BestBank = () => {
     return (
         <div>
-            <div className='text-3xl font-bold text-center m-5'><h1>Best In Bank</h1></div>
+            <div className='text-3xl font-bold text-center m-5'>Best<span className='text-green-400'> In Bank</span></div>
             <div className=' ml-20  grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 md:justify-evenly'>
                 {/* bank -1 */}
                 <div className="card bg-base-100 md:w-60  w-80 lg:w-50 shadow-sm hover:scale-105 transform transition duration-300">

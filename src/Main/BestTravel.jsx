@@ -3,7 +3,7 @@ import React from 'react';
 const BestTravel = () => {
     return (
         <div>
-            <div className='text-3xl font-bold text-center m-5'><h1>Best In Travel Insurance Company</h1></div>
+            <div className='text-3xl font-bold text-center m-5'><h1>Best In Travel <span className='text-green-400'>Insurance Company</span> </h1></div>
             <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-2  ml-20 mb-5">
 
                 {/* Company 1 */}

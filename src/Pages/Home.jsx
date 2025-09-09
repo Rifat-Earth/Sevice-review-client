@@ -9,8 +9,6 @@ import { AuthContext } from '../contexts/AuthContext';
 import PopularServices from '../Main/PopularServices';
 import WhyChooseUs from '../Main/WhyChooseUs';
 import CustomerReview from '../Main/CustomerReview';
-// import { motion } from "motion/react"
-
 const Home = () => {
 
   useEffect(() => {
@@ -29,11 +27,11 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <h1
-        className='text-3xl font-bold text-center m-5 mt-10'>Featured Service Section</h1>
+        className='text-3xl font-bold text-center m-5 mt-10'>Featured <span className='text-green-400'>Service Section</span> </h1>
       <div className='grid grid-cols-1 m-4 md:grid-cols-4 lg:grid-cols-6   md:gap-2 ml-20 gap-2 '>
         {
           data.slice(0, 12).map(feature => (
-            <Featured_Service_section className='card bg-base-200 shadow-lg hover:scale-105 transform transition duration-300' key={feature._id} feature={feature} />
+            <Featured_Service_section  key={feature._id} feature={feature} />
           ))
         }
       </div>

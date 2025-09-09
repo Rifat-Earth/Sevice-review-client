@@ -5,32 +5,32 @@ const PopularServices = () => {
     const services = [
     {
       name: "Car Washing",
-      img: "https://i.ibb.co/ZT3mbF0/car-wash.jpg",
+      img: "https://i.ibb.co.com/VpV8gZ2z/pexels-koprivakart-3354648.jpg",
       desc: "Professional car cleaning with premium care.",
     },
     {
       name: "Food Delivery",
-      img: "https://i.ibb.co/qxgKfQJ/food-delivery.jpg",
+      img: "https://i.ibb.co.com/1fq4kprR/kai-pilger-t-L92-LY152-Sk-unsplash.jpg",
       desc: "Delicious meals delivered to your doorstep.",
     },
     {
       name: "Travel & Tours",
-      img: "https://i.ibb.co/7X0dChN/travel.jpg",
+      img: "https://i.ibb.co.com/B5HV0cw1/chuanyang-chen-Yu-Xc22njq-Tg-unsplash.jpg",
       desc: "Comfortable travel and amazing tour packages.",
     },
     {
       name: "Home Cleaning",
-      img: "https://i.ibb.co/k0kY2zT/home-cleaning.jpg",
+      img: "https://i.ibb.co.com/mVXrwXKT/josue-michel-Fhs-FUo-Wfc0-unsplash.jpg",
       desc: "Reliable home and office cleaning services.",
     },
     {
       name: "Hair and Make Up",
-      img: "https://i.ibb.co/7X0dChN/travel.jpg",
+      img: "https://i.ibb.co.com/tMbpPcsc/alan-pope-V8v-E6-Uayc8-M-unsplash.jpg",
       desc: "Get ready with us with few minutes.",
     },
     {
-      name: "Fexi plan",
-      img: "https://i.ibb.co/k0kY2zT/home-cleaning.jpg",
+      name: "Flexi plan",
+      img: "https://i.ibb.co.com/wFm8yZFs/kelly-sikkema-f-Zz-XB6-RZI2-I-unsplash.jpg",
       desc: "Unlimited Talk time and data plan .",
     },
   ];
