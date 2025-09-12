@@ -36,10 +36,10 @@ const PartnerSection = () => {
     ];
     return (
         <div>
-            <section className=" bg-base-100 ">
-                <div className=" ml-20 ">
+            <section className=" bg-base-100  ">
+                <div className="  ">
                     <h2 className="text-3xl font-bold text-center m-5">Meet <span className='text-green-400'> Our Partners</span></h2>
-                    <div className="grid sm:grid-cols-1  md:grid-cols-4 lg:grid-cols-6">
+                    <div className="grid lg:ml-20 p-6 ml-8 sm:grid-cols-1  md:grid-cols-4 lg:grid-cols-6 gap-5">
                         {partners.map((partner, index) => (
                             <div key={index} className="card bg-base-200 shadow-xl w-80 lg:w-50 md:w-60 hover:scale-105 transform transition duration-300 ">
                                 <figure className="px-10 pt-10">

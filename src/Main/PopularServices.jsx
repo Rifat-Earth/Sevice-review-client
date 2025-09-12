@@ -37,7 +37,7 @@ const PopularServices = () => {
     return (
         <div>
               <div className="py-5 bg-base-100">
-      <div className="  ml-20 mr-8 text-center">
+      <div className="  lg:ml-20 ml-8 p-6 mr-8 text-center">
         {/* Heading */}
         <h2 className="text-3xl font-bold m-5">
           Our <span className="text-green-400">Popular Services</span>

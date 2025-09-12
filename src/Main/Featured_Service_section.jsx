@@ -8,13 +8,13 @@ const Featured_Service_section = ({ feature }) => {
     
     return (
         <>
-            <div className="card card-side h-90 w-80 lg:w-50 md:w-60 bg-base-100 shadow-sm mb-5 hover:scale-105 transform transition duration-300  ">
+            <div className="card bg-base-200 card-side h-90 w-80 lg:w-50 md:w-60 shadow-sm mb-5 hover:scale-105 transform transition duration-300  ">
                
                 <div className="card-body">
                      <figure>
                     <img
                         src={feature.photo}
-                        alt="photo" className='w-36  rounded-xl  ' />
+                        alt="photo" className='w-36 mr-30  rounded-xl  ' />
                 </figure>
                     <h2 className="card-title">{feature.title}</h2>
                     <p><span className='text-lg font-bold'>Description:</span> {feature.description}</p>

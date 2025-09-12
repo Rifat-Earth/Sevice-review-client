@@ -20,13 +20,13 @@ const Footer = () => {
             <nav>
                 <div className="grid grid-flow-col gap-4">
                     <a className='text-gray-700' target='_blank' href='https://www.facebook.com/'>
-                        <FaFacebook size={36} className=" cursor-pointer hover:text-blue-600 transition"/>
+                        <FaFacebook size={36} className=" cursor-pointer hover:text-green-400 transition"/>
                     </a>
                     <a  className='text-gray-700' target='_blank' href='https://x.com/'>
-                        <TiSocialTwitter size={36} className=" cursor-pointer hover:text-blue-600 transition"/>
+                        <TiSocialTwitter size={36} className=" cursor-pointer hover:text-green-400 transition"/>
                     </a>
                     <a className='text-gray-700' target='_blank' href='https://www.youtube.com/'>
-                        <TiSocialYoutube size={36} className=" cursor-pointer hover:text-blue-600 transition"/>
+                        <TiSocialYoutube size={36} className=" cursor-pointer hover:text-green-400 transition"/>
                     </a>
                 </div>
             </nav>

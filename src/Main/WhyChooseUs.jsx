@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
     ];
     return (
         <div>
-            <div className='  ml-20 rounded-xl mr-8 mb-6 '>
+            <div className='p-6 ml-8  lg:ml-20 rounded-xl mr-8 mb-6 '>
                 <div className="py-5 bg-base-200">
                     <div className="max-w-6xl mx-auto text-center px-6">
                         {/* Heading */}

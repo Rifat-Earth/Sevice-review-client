@@ -4,9 +4,9 @@ const BestBank = () => {
     return (
         <div>
             <div className='text-3xl font-bold text-center m-5'>Best<span className='text-green-400'> In Bank</span></div>
-            <div className=' ml-20  grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 md:justify-evenly'>
+            <div className='p-6 ml-8 gap-5 lg:ml-20 bg-base-100 sm:p-6 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 md:justify-evenly'>
                 {/* bank -1 */}
-                <div className="card bg-base-100 md:w-60  w-80 lg:w-50 shadow-sm hover:scale-105 transform transition duration-300">
+                <div className="card bg-base-200 md:w-60  w-80 lg:w-50 shadow-sm hover:scale-105 transform transition duration-300">
                     <figure className="px-10 pt-10">
                         <img width="100" height="100" src="https://img.icons8.com/avantgarde/100/bank.png" alt="bank" />
                     </figure>
@@ -29,7 +29,7 @@ const BestBank = () => {
                     </div>
                 </div>
                   {/* bank -2 */}
-                <div className="card bg-base-100 w-80 md:w-60 lg:w-50 shadow-sm hover:scale-105 transform transition duration-300">
+                <div className="card bg-base-200 w-80 md:w-60 lg:w-50 shadow-sm hover:scale-105 transform transition duration-300">
                     <figure className="px-10 pt-10">
                         <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
                     </figure>
@@ -52,7 +52,7 @@ const BestBank = () => {
                     </div>
                 </div>
                 {/* bank-4 */}
-                 <div className="card bg-base-100 w-80 md:w-60 lg:w-50 shadow-sm hover:scale-105 transform transition duration-300">
+                 <div className="card bg-base-200 w-80 md:w-60 lg:w-50 shadow-sm hover:scale-105 transform transition duration-300">
                     <figure className="px-10 pt-10">
                         <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
                     </figure>
@@ -76,7 +76,7 @@ const BestBank = () => {
                 </div>
               
                 {/* bank-5 */}
-                 <div className="card bg-base-100 w-80 md:w-60 lg:w-50 shadow-sm hover:scale-105 transform transition duration-300">
+                 <div className="card bg-base-200 w-80 md:w-60 lg:w-50 shadow-sm hover:scale-105 transform transition duration-300">
                     <figure className="px-10 pt-10">
                         <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
                     </figure>
@@ -99,7 +99,7 @@ const BestBank = () => {
                     </div>
                 </div>
                 {/* bank-6 */}
-                 <div className="card bg-base-100 md:w-60 w-80 lg:w-50 shadow-sm hover:scale-105 transform transition duration-300">
+                 <div className="card bg-base-200 md:w-60 w-80 lg:w-50 shadow-sm hover:scale-105 transform transition duration-300">
                     <figure className="px-10 pt-10">
                         <img width="64" height="64" src="https://img.icons8.com/dusk/64/bank.png" alt="bank"/>
                     </figure>
@@ -122,7 +122,7 @@ const BestBank = () => {
                     </div>
                 </div>
                {/* bank -3 */}
-                <div className="card bg-base-100 md:w-60 w-80 lg:w-50 shadow-sm hover:scale-105 transform transition duration-300">
+                <div className="card bg-base-200 md:w-60 w-80 lg:w-50 shadow-sm hover:scale-105 transform transition duration-300">
                     <figure className="px-10 pt-10">
                         <img width="50" height="50" src="https://img.icons8.com/doodle/50/bank.png" alt="bank"/>
                     </figure>

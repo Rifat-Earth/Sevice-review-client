@@ -4,10 +4,10 @@ const BestTravel = () => {
     return (
         <div>
             <div className='text-3xl font-bold text-center m-5'><h1>Best In Travel <span className='text-green-400'>Insurance Company</span> </h1></div>
-            <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-2  ml-20 mb-5">
+            <div className="grid p-6 ml-8 bg-base-100 grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-5  lg:ml-20 mb-5">
 
                 {/* Company 1 */}
-                <div className="card bg-base-100 lg:w-50 w-80 shadow-sm hover:scale-105 transform transition duration-300">
+                <div className="card bg-base-200 lg:w-50 w-80 shadow-sm hover:scale-105 transform transition duration-300">
                     <figure className="px-10 pt-10">
                         <img width="50" height="50" src="https://img.icons8.com/ios/50/travel-agency.png" alt="travel-agency"/>
                     </figure>
@@ -20,7 +20,7 @@ const BestTravel = () => {
                     </div>
                 </div>
                 {/* Company 2 */}
-                <div className="card bg-base-100 lg:w-50 w-80 shadow-sm hover:scale-105 transform transition duration-300">
+                <div className="card bg-base-200 lg:w-50 w-80 shadow-sm hover:scale-105 transform transition duration-300">
                     <figure className="px-10 pt-10">
                        <img width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-travel-agency-travel-agency-flaticons-lineal-color-flat-icons.png" alt="external-travel-agency-travel-agency-flaticons-lineal-color-flat-icons"/>
                     </figure>
@@ -33,7 +33,7 @@ const BestTravel = () => {
                     </div>
                 </div>
                 {/* company-4 */}
-                   <div className="card bg-base-100 lg:w-50 w-80 shadow-sm hover:scale-105 transform transition duration-300">
+                   <div className="card bg-base-200 lg:w-50 w-80 shadow-sm hover:scale-105 transform transition duration-300">
                     <figure className="px-10 pt-10">
                        <img width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-travel-agency-travel-agency-flaticons-lineal-color-flat-icons.png" alt="external-travel-agency-travel-agency-flaticons-lineal-color-flat-icons"/>
                     </figure>
@@ -46,7 +46,7 @@ const BestTravel = () => {
                     </div>
                 </div>
                 {/* company-5 */}
-                 <div className="card bg-base-100 lg:w-50 w-80 shadow-sm hover:scale-105 transform transition duration-300">
+                 <div className="card bg-base-200 lg:w-50 w-80 shadow-sm hover:scale-105 transform transition duration-300">
                     <figure className="px-10 pt-10">
                        <img width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-travel-agency-travel-agency-flaticons-lineal-color-flat-icons.png" alt="external-travel-agency-travel-agency-flaticons-lineal-color-flat-icons"/>
                     </figure>
@@ -59,7 +59,7 @@ const BestTravel = () => {
                     </div>
                 </div>
                 {/* company-6 */}
-                 <div className="card bg-base-100 lg:w-50 w-80 shadow-sm hover:scale-105 transform transition duration-300">
+                 <div className="card bg-base-200 lg:w-50 w-80 shadow-sm hover:scale-105 transform transition duration-300">
                     <figure className="px-10 pt-10">
                        <img width="64" height="64" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-travel-agency-travel-agency-flaticons-lineal-color-flat-icons.png" alt="external-travel-agency-travel-agency-flaticons-lineal-color-flat-icons"/>
                     </figure>
@@ -72,7 +72,7 @@ const BestTravel = () => {
                     </div>
                 </div>
                 {/* Company 3 */}
-                <div className="card bg-base-100 lg:w-50 w-80 shadow-sm hover:scale-105 transform transition duration-300">
+                <div className="card bg-base-200 lg:w-50 w-80 shadow-sm hover:scale-105 transform transition duration-300">
                     <figure className="px-10 pt-10">
                       <img width="64" height="64" src="https://img.icons8.com/external-photo3ideastudio-flat-photo3ideastudio/64/external-travel-agency-online-business-photo3ideastudio-flat-photo3ideastudio.png" alt="external-travel-agency-online-business-photo3ideastudio-flat-photo3ideastudio"/>
                     </figure>

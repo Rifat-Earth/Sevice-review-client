@@ -33,8 +33,8 @@ const CustomerReview = () => {
     
   ];
     return (
-         <div className="bg-base-200  ml-20  rounded-xl py-10 mr-8">
-      <div className=" max-w-6xl mx-auto text-center px-6 ">
+         <div className="bg-base-200 ml-12 p-10 lg:ml-26  rounded-xl py-10 mr-12 mb-5">
+      <div className=" text-center  ">
         {/* Heading */}
         <h2 className="text-3xl font-bold mt-5">
           What Our <span className="text-green-400">Customers Say</span>

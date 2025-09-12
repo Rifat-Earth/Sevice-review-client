@@ -31,12 +31,12 @@ const Navbar = () => {
         <div className="navbar bg-green-100 shadow-sm sticky top-0 z-50">
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                    <div tabIndex={0} role="button" className="btn btn-ghost bg-gray-800 lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2 shadow">
                         {
                             user ?
                                 <>
@@ -76,13 +76,13 @@ const Navbar = () => {
                     {
                         user ?
                             <>
-                                <li lassName='text-green-400'><NavLink to='/' className={({ isActive }) => isActive ? "text-blue-400 font-bold" : 'text-green-400'}>Home</NavLink></li>
-                                <li className='text-green-400'><NavLink to='/services' className={({ isActive }) => isActive ? "text-green-400 font-bold" : "text-green-400"}>All Services</NavLink></li>
-                                <li className='text-green-400'><NavLink to='/AddService' className={({ isActive }) => isActive ? "text-green-400 font-bold" : 'text-green-400'}>AddServices</NavLink></li>
-                                <li lassName='text-green-400'><NavLink to='/MyService' className={({ isActive }) => isActive ? "text-green-400 font-bold" : "text-green-400"}>MyServices</NavLink></li>
-                                <li lassName='text-green-400'><NavLink to='/MyReview' className={({ isActive }) => isActive ? "text-green-400 font-bold" : "text-green-400"}>MyReviews</NavLink></li>
-                                <li lassName='text-green-400'><NavLink to='/demos' className={({ isActive }) => isActive ? "text-green-400 font-bold" : ""}>Demos</NavLink></li>
-                                <li className='text-blue-400'><NavLink to='/features' className={({ isActive }) => isActive ? "text-green-400 font-bold" : "text-green-400"}>Features</NavLink></li>
+                                <li className='text-green-400'><NavLink to='/' className={({ isActive }) => isActive ? "text-blue-400 font-bold" : 'text-green-400'}>Home</NavLink></li>
+                                <li className='text-green-400'><NavLink to='/services' className={({ isActive }) => isActive ? "text-blue-400 font-bold" : "text-green-400"}>All Services</NavLink></li>
+                                <li className='text-green-400'><NavLink to='/AddService' className={({ isActive }) => isActive ? "text-blue-400 font-bold" : 'text-green-400'}>AddServices</NavLink></li>
+                                <li lassName='text-green-400'><NavLink to='/MyService' className={({ isActive }) => isActive ? "text-blue-400 font-bold" : "text-green-400"}>MyServices</NavLink></li>
+                                <li lassName='text-green-400'><NavLink to='/MyReview' className={({ isActive }) => isActive ? "text-blue-400 font-bold" : "text-green-400"}>MyReviews</NavLink></li>
+                                <li className='text-green-400'><NavLink to='/demos' className={({ isActive }) => isActive ? "text-blue-400 font-bold" : ""}>Demos</NavLink></li>
+                                <li className='text-blue-400'><NavLink to='/features' className={({ isActive }) => isActive ? "text-blue-400 font-bold" : "text-green-400"}>Features</NavLink></li>
                                 <li className='text-green-400'><NavLink to='/support' className={({ isActive }) => isActive ? "text-blue-400 font-bold" : "text-green-400"}>Support</NavLink></li>
                                 <li className='text-green-400'><NavLink to='/documentation' className={({ isActive }) => isActive ? "text-blue-400 font-bold" : "text-green-400"}>Documentation</NavLink></li>
                             </> :
@@ -107,12 +107,12 @@ const Navbar = () => {
                         <>
                             <div className="group relative flex items-center gap-2 cursor-pointer">
                              
-                                <img src={user.photoURL} alt="Profile" className="w-7 h-7 rounded-full object-cover" />
-                                <span className="hidden group-hover:inline bg-gray-200 text-sm px-2   rounded shadow absolute top-full mt-1">
-                                    {user.displayName || "My Profile"}
+                                <img src={user?.photoURL || "/logo/user.png"} className="w-7 h-7 rounded-full object-cover border-2 border-green-400 " />
+                                <span className="hidden group-hover:inline bg-gray-800 text-sm px-2   rounded shadow absolute top-full mt-1">
+                                    {user?.displayName || "My Profile"}
                                 </span>
                             </div>
-                            <NavLink onClick={handleLogOut} className={({ isActive }) => isActive ? "text-blue-400 font-bold btn" : "text-green-400"}>Log Out</NavLink></>
+                            <NavLink onClick={handleLogOut} className={({ isActive }) => isActive ? "text-green-400 font-bold btn" : "0"}>Log Out</NavLink></>
                         : <>
                             <div className=' mr-8 flex'>
                                
