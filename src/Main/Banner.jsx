@@ -9,10 +9,10 @@ const Banner = () => {
         <div className='flex flex-col md:flex-row items-center justify-between p-6 lg:ml-20 lg:mr-10 gap-10 mt-10 '>
             <div className='max-w-lg '>
                 <h2 className="text-5xl font-bold leading-snug">
-                    <span className="text-blue-500">Keep Exploring</span> <br />
+                    <span className="text-blue-700">Keep Exploring</span> <br />
 
                   
-                        <span className="text-green-500 block">
+                        <span className="text-green-700 block">
                             <Typewriter
                                 words={[
                                     "And Accept Our Services",

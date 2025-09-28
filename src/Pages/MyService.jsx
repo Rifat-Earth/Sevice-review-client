@@ -93,23 +93,23 @@ const MyService = () => {
 
     return (
         <div>
-            <div className="container mx-auto px-4 py-8">
-                <h2 className="text-2xl font-bold mb-6 text-center">My  Services</h2>
+            <div className="container mx-auto px-4 py-12">
+                <h2 className="text-4xl font-bold mb-6 text-green-700 text-center">My  Services</h2>
 
                 {myServiceData.length === 0 ? (
                     <div className="text-center text-gray-500">
                         No Services For You.
                     </div>
                 ) : (
-                    <div className="overflow-x-auto">
-                        <table className="table table-zebra w-full">
-                            <thead className="bg-base-200">
+                    <div className="overflow-x-auto ml-16 ">
+                        <table className="table table-zebra w-350 text-center">
+                            <thead className="bg-green-100 ">
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Category</th>
-                                    <th>Title</th>
-                                    <th>Price</th>
-                                    <th>Actions</th>
+                                    <th className='text-green-700'>Name</th>
+                                    <th className='text-green-700'>Category</th>
+                                    <th className='text-green-700'>Title</th>
+                                    <th className='text-green-700'>Price</th>
+                                    <th className='text-green-700'>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>

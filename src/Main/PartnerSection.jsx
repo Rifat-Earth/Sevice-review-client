@@ -19,17 +19,17 @@ const PartnerSection = () => {
         },
          {
             name: "SecureLayer1",
-            logo: "https://img.icons8.com/bubbles/100/shield.png",
+            logo: "https://i.ibb.co.com/3Yj1MPJ1/preview.jpg",
             description: "Ensures secure data handling and encrypted communication.",
         },
          {
             name: "SecureLayer2",
-            logo: "https://img.icons8.com/bubbles/100/shield.png",
+            logo: "https://i.ibb.co.com/fGZNM9ML/Tech-logo.jpg",
             description: "Ensures secure data handling and encrypted communication.",
         },
          {
             name: "SecureLayer3",
-            logo: "https://img.icons8.com/bubbles/100/shield.png",
+            logo: "https://i.ibb.co.com/z3kMLFL/OSO1XY0.jpg",
             description: "Ensures secure data handling and encrypted communication.",
         },
          
@@ -38,7 +38,7 @@ const PartnerSection = () => {
         <div>
             <section className=" bg-base-100  ">
                 <div className="  ">
-                    <h2 className="text-3xl font-bold text-center m-5">Meet <span className='text-green-400'> Our Partners</span></h2>
+                    <h2 className="text-3xl font-bold text-center m-5">Meet <span className='text-green-700'> Our Partners</span></h2>
                     <div className="grid lg:ml-20 p-6 ml-8 sm:grid-cols-1  md:grid-cols-4 lg:grid-cols-6 gap-5">
                         {partners.map((partner, index) => (
                             <div key={index} className="card bg-base-200 shadow-xl w-80 lg:w-50 md:w-60 hover:scale-105 transform transition duration-300 ">

@@ -40,7 +40,7 @@ const PopularServices = () => {
       <div className="  lg:ml-20 ml-8 p-6 mr-8 text-center">
         {/* Heading */}
         <h2 className="text-3xl font-bold m-5">
-          Our <span className="text-green-400">Popular Services</span>
+          Our <span className="text-green-700">Popular Services</span>
         </h2>
         <p className="text-gray-600 mb-12">
           Choose from our most demanded services trusted by customers every day.
@@ -64,7 +64,7 @@ const PopularServices = () => {
                 <h3 className="text-xl font-semibold">{service.name}</h3>
                 <p className="text-gray-600">{service.desc}</p>
                 <div className="card-actions justify-center mt-3">
-                  <button className="btn bg-green-400 btn-sm">Explore</button>
+                  <button className="btn bg-green-700 btn-sm">Explore</button>
                 </div>
               </div>
             </div>

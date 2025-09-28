@@ -12,12 +12,12 @@ const SingleService = ({service}) => {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title text-center"> {service.category}</h2>
-                    <h2 className="card-title text-center"><span className='font-semibold text-red-600'>Title: </span> {service.title}</h2>
-                    <p><span className='font-semibold text-red-600'>Description: </span> {service.description}</p>
-                    <div className="card-actions">
-                        <h2 className="card-title text-center mt-2"><span className='font-semibold text-red-600 '>Price:</span>  {service.price}</h2>
+                    <h2 className="card-title text-center"><span className='font-semibold text-green-700'>Title: </span> {service.title}</h2>
+                    <p><span className='font-bold text-green-700'>Description: </span> {service.description}</p>
+                    <div className="card-actions flex">
+                        <h2 className="card-title text-center  mt-2"><span className='font-bold text-green-700 '>Price:</span>  {service.price}</h2>
                         <Link to={`/detailsService/${service._id}`}>
-                            <button className="btn ml-12  w-full">View Details</button>
+                            <button className="btn ml-12 bg-green-700 rounded-xl ">View Details</button>
                         </Link>
                     </div>
                 </div>

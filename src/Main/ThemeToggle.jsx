@@ -15,7 +15,7 @@ const ThemeToggle = () => {
 
       {/* sun icon (light mode) */}
       <svg
-        className="swap-off fill-current w-8  text-gray-800"
+        className="swap-off fill-current w-8  text-yellow-400"
         xmlns="http://www.w3.org/2000/svg"
        viewBox="0 0 24 24"
       >

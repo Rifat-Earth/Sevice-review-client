@@ -46,18 +46,18 @@ const Services = () => {
     return (
         <div className="p-6">
 
-            <div className="flex flex-col md:flex-row gap-4 items-center mb-6">
+            <div className="flex flex-col md:flex-row gap-4 items-center ml-12 mb-6">
                 <input
                     type="text"
                     placeholder="Search by title, category, or company"
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="input input-bordered w-full max-w-xs"
+                    className="input input-bordered w-full max-w-xs border-green-700 "
                 />
                 <select
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
-                    className="select select-bordered"
+                    className="select select-bordered border-green-700"
                 >
                     <option value="All">All Categories</option>
                     <option value="Food Service">Food Service</option>
@@ -68,7 +68,7 @@ const Services = () => {
             </div>
 
 
-            <div className="grid grid-cols-1 md:grid-cols-3 p-5 md:p-12 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-4 p-5 md:p-12 gap-5">
                 {services.length > 0 ? (
                     services.map((service) => (
                         <SingleService key={service._id} service={service} />

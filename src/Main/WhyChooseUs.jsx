@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
                     <div className="max-w-6xl mx-auto text-center px-6">
                         {/* Heading */}
                         <h2 className="text-3xl font-bold mb-6">
-                            Why <span className="text-green-400">Choose Us?</span>
+                            Why <span className="text-green-700">Choose Us?</span>
                         </h2>
                         <p className="text-gray-600 max-w-2xl mx-auto mb-12">
                             We provide reliable services with top-rated customer satisfaction.
@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
                                     key={index}
                                     className="bg-white rounded-2xl shadow-lg p-6 hover:scale-105 transform transition duration-300"
                                 >
-                                    <h3 className="text-3xl font-extrabold text-green-400">
+                                    <h3 className="text-3xl font-extrabold text-green-700">
                                         {item.number}
                                     </h3>
                                     <p className="mt-2 text-gray-700">{item.label}</p>

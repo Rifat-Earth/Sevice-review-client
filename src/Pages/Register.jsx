@@ -71,7 +71,7 @@ const Register = () => {
             <div className="hero-content flex-col lg:flex-row-reverse">
 
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                    <h2 className='ml-6 mt-5 font-bold text-4xl'>Please Resister</h2>
+                    <h2 className='ml-6 mt-5 font-bold text-4xl text-blue-700'>Please Resister</h2>
                     <div className="card-body">
                         <form onSubmit={handleRegister} className="">
                             <label className="label">Name</label>
@@ -88,15 +88,15 @@ const Register = () => {
                                     className='btn btn-xs absolute top-2 right-6'>{
                                         showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}</button>
                             </div>
-                            <div className="mt-2"><br></br> <span>Already have an account. Please <Link className='text-blue-500 link link-hover' to='/SignIn'>SignIn</Link> </span></div>
-                            <p><button onClick={handleGoogleLogIn} className='text-blue-400 btn mt-3 w-full'><FcGoogle />Resister with Google</button></p>
-                            <button className="btn btn-neutral mt-4 justify-center">Resister</button>
+                            <div className="mt-2"><br></br> <span>Already have an account. Please <Link className='text-blue-700 link link-hover' to='/SignIn'>SignIn</Link> </span></div>
+                            <p><button onClick={handleGoogleLogIn} className='text-blue-700 bg-green-100 btn mt-3 w-full'><FcGoogle />Resister with Google</button></p>
+                            <button className="btn bg-green-700 mt-4 justify-center">Resister</button>
                         </form>
                         {
                             errorMassage && <p className='text-red-400'>{errorMassage}</p>
                         }
                         {
-                            success && <p className='text-green-400'>you are successfully Done!</p>
+                            success && <p className='text-green-700'>you are successfully Done!</p>
                         }
                     </div>
                 </div>

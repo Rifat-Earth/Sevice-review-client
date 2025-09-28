@@ -66,7 +66,7 @@ const SignIn = () => {
 
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <div className="card-body">
-                        <h1 className='font-bold text-2xl '>Sign In</h1>
+                        <h1 className='font-bold text-2xl text-blue-700 '>Sign In</h1>
                         <form onSubmit={handleSignIn}>
                             <label className="label">Email</label>
                             <input type="email" ref={emailRef} name='email' className="input" placeholder="Email" />
@@ -80,12 +80,12 @@ const SignIn = () => {
                                         showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}</button>
                             </div>
                             <div><a className="link link-hover">Forgot password?</a> </div>
-                            <div className="mt-2"><br></br> <span> You don't have an account. please <Link className='text-blue-500 link link-hover' to='/resister'>Resister</Link> </span></div>
-                            <p> <button onClick={handleGoogleLogIn} className='text-blue-400 btn mt-3 w-full'><FcGoogle />Log In with Google</button></p>
-                            <button className="btn btn-neutral mt-4">SignIn</button>
+                            <div className="mt-2"><br></br> <span> You don't have an account. please <Link className='text-blue-700 link link-hover' to='/resister'>Resister</Link> </span></div>
+                            <p> <button onClick={handleGoogleLogIn} className='text-blue-700 bg-green-100 btn mt-3 w-full'><FcGoogle />Log In with Google</button></p>
+                            <button className="btn bg-green-700 mt-4">SignIn</button>
                         </form>
                         {
-                            success && <p className='text-green-400'> you are successfully Done!</p>
+                            success && <p className='text-green-700'> you are successfully Done!</p>
 
                         }
 
