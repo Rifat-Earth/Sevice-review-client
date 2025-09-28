@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router';
 
 const Footer = () => {
     return (
-        <footer className="footer footer-horizontal footer-center sticky bg-green-100 text-base-content rounded p-10">
+        <footer className="footer footer-horizontal footer-center sticky  bg-green-100 text-base-content rounded p-10">
             <nav className="grid grid-flow-col gap-4">
                <ul className=' gap-x-4 md:flex lg:flex'>
                  <li className='text-green-700'><NavLink to='/' className={({ isActive }) => isActive ? "text-blue-700 font-bold" : ''}>Home</NavLink></li>

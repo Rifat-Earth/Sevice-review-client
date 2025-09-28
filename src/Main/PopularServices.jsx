@@ -64,7 +64,7 @@ const PopularServices = () => {
                 <h3 className="text-xl font-semibold">{service.name}</h3>
                 <p className="text-gray-600">{service.desc}</p>
                 <div className="card-actions justify-center mt-3">
-                  <button className="btn bg-green-700 btn-sm">Explore</button>
+                  <button className="btn bg-green-700  text-white">Explore</button>
                 </div>
               </div>
             </div>

@@ -24,7 +24,7 @@ const BestBank = () => {
                             <input type="radio" name="rating-global" className="mask mask-star-2 bg-yellow-400" />
                         </div>
                         <div className="card-actions">
-                            <button className="btn bg-green-700">Details</button>
+                            <button className="btn bg-green-700 text-white">Details</button>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@ const BestBank = () => {
                             <input type="radio" name="rating-star" className="mask mask-star-2 bg-yellow-400" defaultChecked/>
                         </div>
                         <div className="card-actions">
-                            <button className="btn bg-green-700">Details</button>
+                            <button className="btn bg-green-700 text-white">Details</button>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ const BestBank = () => {
                             <input type="radio" name="rating-pay" className="mask mask-star-2 bg-yellow-400" defaultChecked/>
                         </div>
                         <div className="card-actions">
-                            <button className="btn bg-green-700">Details</button>
+                            <button className="btn bg-green-700 text-white">Details</button>
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@ const BestBank = () => {
                             <input type="radio" name="rating-secure" className="mask mask-star-2 bg-yellow-400" defaultChecked/>
                         </div>
                         <div className="card-actions">
-                            <button className="btn bg-green-700">Details</button>
+                            <button className="btn bg-green-700 text-white">Details</button>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ const BestBank = () => {
                             <input type="radio" name="rating-securepay" className="mask mask-star-2 bg-yellow-400" defaultChecked/>
                         </div>
                         <div className="card-actions">
-                            <button className="btn bg-green-700">Details</button>
+                            <button className="btn bg-green-700 text-white">Details</button>
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@ const BestBank = () => {
                             <input type="radio" name="rating-metro" className="mask mask-star-2 bg-yellow-400" />
                         </div>
                         <div className="card-actions">
-                            <button className="btn bg-green-700">Details</button>
+                            <button className="btn bg-green-700 text-white">Details</button>
                         </div>
                     </div>
                 </div>

@@ -112,7 +112,7 @@ const Navbar = () => {
                                     {user?.displayName || "My Profile"}
                                 </span>
                             </div>
-                            <NavLink onClick={handleLogOut} className={({ isActive }) => isActive ? "text-green-700 font-bold btn" : "0"}>Log Out</NavLink></>
+                            <NavLink onClick={handleLogOut} className={({ isActive }) => isActive ? "text-green-700 font-bold btn border-2 border-green-700" : "0"}>Log Out</NavLink></>
                         : <>
                             <div className=' mr-8 flex'>
                                

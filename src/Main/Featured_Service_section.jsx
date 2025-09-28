@@ -22,7 +22,7 @@ const Featured_Service_section = ({ feature }) => {
                      <div className="card-actions">
                                            
                                             <Link to={`/detailsService/${feature._id}`}>
-                                                <button className="btn bg-green-700  w-full">View Details</button>
+                                                <button className="btn bg-green-700 text-white  w-full">View Details</button>
                                             </Link>
                                         </div>
                 </div>

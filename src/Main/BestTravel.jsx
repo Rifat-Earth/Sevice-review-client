@@ -15,7 +15,7 @@ const BestTravel = () => {
                         <h2 className="card-title">TravelSafe</h2>
                         <p className="text-sm text-gray-600 font-bold">Rating: 4.5</p>
                         <div className="card-actions">
-                            <button className="btn bg-green-700">Visit Our Site</button>
+                            <button className="btn bg-green-700 text-white">Visit Our Site</button>
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@ const BestTravel = () => {
                         <h2 className="card-title">GlobeCover</h2>
                         <p className="text-sm text-gray-600 font-bold">Rating: 4.2</p>
                         <div className="card-actions">
-                            <button className="btn bg-green-700">Visit Our Site</button>
+                            <button className="btn bg-green-700 text-white">Visit Our Site</button>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ const BestTravel = () => {
                         <h2 className="card-title">Safe</h2>
                         <p className="text-sm text-gray-600 font-bold">Rating: 4.1</p>
                         <div className="card-actions">
-                            <button className="btn bg-green-700">Visit Our Site</button>
+                            <button className="btn bg-green-700 text-white">Visit Our Site</button>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ const BestTravel = () => {
                         <h2 className="card-title">TravelBangla</h2>
                         <p className="text-sm text-gray-600 font-bold">Rating: 4.4</p>
                         <div className="card-actions">
-                            <button className="btn bg-green-700">Visit Our Site</button>
+                            <button className="btn bg-green-700 text-white">Visit Our Site</button>
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ const BestTravel = () => {
                         <h2 className="card-title">SweetTravel</h2>
                         <p className="text-sm text-gray-600 font-bold">Rating: 4.3</p>
                         <div className="card-actions">
-                            <button className="btn bg-green-700">Visit Our Site</button>
+                            <button className="btn bg-green-700 text-white">Visit Our Site</button>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ const BestTravel = () => {
                         <h2 className="card-title">ShieldTrip</h2>
                         <p className="text-sm text-gray-600 font-bold">Rating: 4.8</p>
                         <div className="card-actions">
-                            <button className="btn bg-green-700">Visit Our Site</button>
+                            <button className="btn bg-green-700 text-white">Visit Our Site</button>
                         </div>
                     </div>
                 </div>
