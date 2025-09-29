@@ -95,7 +95,8 @@ const Documentation = () => {
             <pre className="bg-base-300 p-3 rounded">
               GET /api/services{"\n"}
               POST /api/reviews {"{ serviceId, text, rating }"}{"\n"}
-              DELETE /api/reviews/:id
+              DELETE /api/reviews/:id{"\n"}
+              PUT/api/services/:id
             </pre>
           </section>
         )}
