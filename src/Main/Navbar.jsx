@@ -88,6 +88,9 @@ const Navbar = () => {
                             </> :
                             <> <li className='text-green-700'><NavLink to='/' className={({ isActive }) => isActive ? "text-blue-700 font-bold" : 'text-green-700'}>Home</NavLink></li>
                                 <li className='text-green-700'><NavLink to='/services' className={({ isActive }) => isActive ? "text-blue-700 font-bold" : "text-green-700"}>All Services</NavLink></li>
+                                 <li className='text-green-700'><NavLink to='/AddService' className={({ isActive }) => isActive ? "text-blue-700 font-bold" : 'text-green-700'}>AddServices</NavLink></li>
+                                <li className='text-green-700'><NavLink to='/MyService' className={({ isActive }) => isActive ? "text-blue-700 font-bold" : "text-green-700"}>MyServices</NavLink></li>
+                                <li className='text-green-700'><NavLink to='/MyReview' className={({ isActive }) => isActive ? "text-blue-700 font-bold" : "text-green-700"}>MyReviews</NavLink></li>
 
                                 <li className='text-green-700'><NavLink to='/features' className={({ isActive }) => isActive ? "text-blue-700 font-bold" : "text-green-700"}>Features</NavLink></li>
                                 <li className='text-green-700'><NavLink to='/support' className={({ isActive }) => isActive ? "text-blue-700 font-bold" : ""}>Support</NavLink></li>
